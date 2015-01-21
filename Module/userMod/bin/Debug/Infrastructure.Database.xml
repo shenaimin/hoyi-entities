@@ -1,0 +1,1466 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Infrastructure.Database</name>
+    </assembly>
+    <members>
+        <member name="T:Infrastructure.Database.Att.DbAttr">
+            <summary>
+            数据库的属性
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.type">
+            <summary>
+            数据库类型.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.Length">
+            <summary>
+            长度.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.Prefix">
+            <summary>
+            小数点前的长度.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.suffix">
+            <summary>
+            小数点后的长度.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.isPK">
+            <summary>
+            是否主键.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.Identity">
+            <summary>
+            是否自增.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.Comment">
+            <summary>
+            备注.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.FieldName">
+            <summary>
+            字段名.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.DefaultValue">
+            <summary>
+            默认值.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Att.DbAttr.NotNULL">
+            <summary>
+            是否不能为空.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.baseExpert">
+            <summary>
+            操作类的基类.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.baseExpert.autoCommit">
+            <summary>
+            是否自动提交, 不自动提交则启动事务.commit之后才会提交.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteTable(System.String)">
+            <summary>
+            执行命令,返回DataTable.
+            </summary>
+            <param name="command">待执行的命令.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteTable(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行存储过程,返回DataTable.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteTable(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter},System.Boolean)">
+            <summary>
+            执行存储过程,返回DataTable.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <param name="isSTOREPRU"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteDataset(System.String)">
+            <summary>
+            执行命令,返回Dataset.
+            </summary>
+            <param name="command">待执行的命令.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteNounery(System.String)">
+            <summary>
+            执行命令,返回受影响的行数.
+            </summary>
+            <param name="command">待执行的命令.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteParamNonQuery(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行sql语句，返回受影响的行数.
+            读写服务器不选择true false 则默认选择读服务器.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteDataReader(System.String)">
+            <summary>
+            执行命令,返回带连接的Reader.用完此方法后,请使用DataReader.Close(),Connection.Close();
+            </summary>
+            <param name="command">待执行的命令.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteParamExists(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行sql语句，主要用于判断是否有数据存在.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.ExecuteParamExists(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter},System.Boolean)">
+            <summary>
+            执行sql语句，主要用于判断是否有数据存在.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <param name="_Are_READ_SERVER">是否写服务器. true 为读服务器， false 为写服务器. </param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteTable(System.String)">
+            <summary>
+            执行命令,返回DataTable.
+            </summary>
+            <param name="command">待执行的命令.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteTable(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行存储过程,返回DataTable.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteTable(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter},System.Boolean)">
+            <summary>
+            执行存储过程,返回DataTable.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <param name="isSTOREPRU"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteDataset(System.String)">
+            <summary>
+            执行命令,返回Dataset.
+            </summary>
+            <param name="command">待执行的命令.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteNounery(System.String,Infrastructure.Database.IDatabase)">
+            <summary>
+            执行命令,返回受影响的行数.
+            </summary>
+            <param name="command">待执行的命令.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteParamNonQuery(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter},Infrastructure.Database.IDatabase)">
+            <summary>
+            执行sql语句，返回受影响的行数.
+            读写服务器不选择true false 则默认选择读服务器.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteDataReader(System.String)">
+            <summary>
+            执行命令,返回带连接的Reader.用完此方法后,请使用DataReader.Close(),Connection.Close();
+            </summary>
+            <param name="command">待执行的命令.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteParamExists(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行sql语句，主要用于判断是否有数据存在.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.baseExpert.STA_ExecuteParamExists(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter},System.Boolean)">
+            <summary>
+            执行sql语句，主要用于判断是否有数据存在.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <param name="_Are_READ_SERVER">是否写服务器. true 为读服务器， false 为写服务器. </param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.Cluster.ClusterInfo">
+            <summary>
+            
+            描述单个集群。
+            
+            单个集群内的每台服务器的数据内容是相同的，
+            
+            写的时候往主服务器去写，而读的时候，则负载去读每个子服务器，
+                或者子服务器少于一个量的时候可以从主服务器/备用主服务器内读数据。
+                另一种做法是把主服务器/备用主服务器也加入到子服务器内,这样可能会出现读的负载问题.
+                
+                解决这个问题: 弄一个集群类型，
+                    即: 完全读写分离 ALL_SPLIT_R_W,
+                        半读写分离方式 HALF_SPLIT_R_W,
+                        读写不分离方式 UN_SPLIT_R_W,
+                        单服务器方式   SIMPLE_DBSERVER
+                        
+                完全读写分离 ALL_SPLIT_R_W        严格按照Master/RE_Master 服务器只写，Slavers  服务器只读.
+                半读写分离方式 HALF_SPLIT_R_W     Master 服务器只写， RE_Master服务器和Slavers服务器只读.
+                读写不分离方式 UN_SPLIT_R_W.      所有服务器都做读写操作，在单服务器，所有服务器双向同步的时候可以使用.
+                但服务器方式   SIMPLE_DBSERVER
+                
+            部署的时候请根据不同的读写分离方式来部署主/从服务器的同步方向.
+            
+            单个集群由单个主服务器、N个备用主服务器、N个子服务器组成，
+            
+            主服务器和备用主服务器当做写的服务器，子服务器作为读的服务器.
+            
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.ClusterInfo.MasterServer">
+            <summary>
+            主服务器,一般作为写服务器.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.ClusterInfo.RE_Masters">
+            <summary>
+            备用主服务器, 一般作为写服务器，当主服务器崩掉后，就自动切换备用服务器为主服务器.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.ClusterInfo.Slavers">
+            <summary>
+            子服务器, 一般做为读服务器，
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.ClusterInfo.R_W_Type">
+            <summary>
+            读写分离类型.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.ClusterInfo.Init(Infrastructure.Database.IDatabase,System.Collections.Generic.List{Infrastructure.Database.IDatabase},System.Collections.Generic.List{Infrastructure.Database.IDatabase},Infrastructure.Database.Cluster.Cluster_R_W_TYPE)">
+            <summary>
+            初始化的内容不能为null,例如 服务器列表没有，则弄个空的列表.
+            </summary>
+            <param name="_master"></param>
+            <param name="_re_masters"></param>
+            <param name="_slavers"></param>
+            <param name="_r_w_type"></param>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.ClusterInfo.Get_WRITE_SERVER">
+            <summary>
+            获取写服务器.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.ClusterInfo.Get_NEW_WRITE_SERVER">
+            <summary>
+            获取一个新,主要区别事务和非事务的写服务器.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.ClusterInfo.Get_READ_SERVER">
+            <summary>
+            获取读服务器.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.ClusterInfo.GetRandomServer(System.Collections.Generic.List{Infrastructure.Database.IDatabase})">
+            <summary>
+            获取单个随机服务器.
+            </summary>
+            <param name="servers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.ClusterInfo.GetRandomI(System.Int32)">
+            <summary>
+            获取随机数.
+            </summary>
+            <param name="len"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.Cluster.Cluster_R_W_TYPE">
+            <summary>
+            
+                完全读写分离 ALL_SPLIT_R_W        严格按照Master/RE_Master 服务器只写，Slavers  服务器只读.
+                半读写分离方式 HALF_SPLIT_R_W     Master 服务器只写， RE_Master服务器和Slavers服务器只读.
+                读写不分离方式 UN_SPLIT_R_W.      所有服务器都做读写操作，在单服务器，所有服务器双向同步的时候可以使用.
+                单服务器方式.  SIMPLE_DBSERVER
+                
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.Cluster_R_W_TYPE.ALL_SPLIT_R_W">
+            <summary>
+            完全读写分离
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.Cluster_R_W_TYPE.HALF_SPLIT_R_W">
+            <summary>
+            半读写分离方式
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.Cluster_R_W_TYPE.UN_SPLIT_R_W">
+            <summary>
+            读写不分离方式
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.Cluster_R_W_TYPE.SIMPLE_DBSERVER">
+            <summary>
+            单服务器方式
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.Cluster.DataBaseCluster">
+            <summary>
+            数据库集群 操作.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.DataBaseCluster.cluster_a">
+            <summary>
+            单集群.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Cluster.DataBaseCluster.db_cluster_info_conf">
+            <summary>
+            集群描述 配置文件内的内容
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.DataBaseCluster.InitServers">
+            <summary>
+            初始化服务器列表.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.DataBaseCluster.Get_WRITE_SERVER">
+            <summary>
+            获取写服务器.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.DataBaseCluster.Get_READ_SERVER">
+            <summary>
+            获取读服务器.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Cluster.DataBaseCluster.Get_Transaction_WRITE_SERVER">
+            <summary>
+            获取一个事务的新的读服务器.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.Cluster.DBSERVERTYPE">
+            <summary>
+            服务器类型.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.conf.HOYIConf.OpenDebug">
+            <summary>
+            是否打开DEBUG输出.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.conf.HOYIConf.OpenError">
+            <summary>
+            是否打开Error输出.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.FILTER.op_BitwiseAnd(Infrastructure.Database.ctrl.FILTER,Infrastructure.Database.ctrl.FILTER)">
+            <summary>
+            and 操作符
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.FILTER.op_BitwiseOr(Infrastructure.Database.ctrl.FILTER,Infrastructure.Database.ctrl.FILTER)">
+            <summary>
+            or 操作符号
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.FILTER.filter">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.FILTER.OPERATES">
+            <summary>
+            操作符号
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.FILTER.value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.FILTER.Pre">
+            <summary>
+            下一个命令组合，如果是1个，则有一个组合
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.FILTER.PreOps">
+            <summary>
+            下一个命令组合的操作
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.ctrl.HOYICMD">
+            <summary>
+            命令
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYICMD.CalcLimit">
+            <summary>
+            计算Limit 值.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.EntType">
+            <summary>
+            实体类型.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.F_Fields">
+            <summary>
+            字段.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.F_UPDATE">
+            <summary>
+            更新.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.F_Where">
+            <summary>
+            条件.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.F_Order">
+            <summary>
+            排序.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.F_Limit">
+            <summary>
+            分页.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.PageSize">
+            <summary>
+            单页行数.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.pageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.PgCount">
+            <summary>
+            页面总条数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.DataCount">
+            <summary>
+            数据总条数.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ctrl.HOYICMD.F_TableName">
+            <summary>
+            表名.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.GetNames(System.Object[])">
+            <summary>
+            获取参数里的字段名.
+            例如: "userid", 4, "username", "qq"
+            里的, "userid", "username"
+            </summary>
+            <param name="paramter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.GetObjects(System.Object[])">
+            <summary>
+            
+            获取参数里的字段名.
+            例如: "userid", 4, "username", "qq"
+            里的, 4, "qq"
+            </summary>
+            <param name="paramter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.PgSize(Infrastructure.Database.ctrl.HOYICMD,System.Int32)">
+            <summary>
+            单页条数.
+            </summary>
+            <param name="cmd"></param>
+            <param name="pagesize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Jump(Infrastructure.Database.ctrl.HOYICMD,System.Int32)">
+            <summary>
+            取pageindex内的数据.
+            </summary>
+            <param name="cmd"></param>
+            <param name="pageindex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.PgSize(Infrastructure.Database.ctrl.HOYICMD,System.String)">
+            <summary>
+            单页条数.
+            </summary>
+            <param name="cmd"></param>
+            <param name="pagesize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Jump(Infrastructure.Database.ctrl.HOYICMD,System.String)">
+            <summary>
+            取pageindex内的数据.
+            </summary>
+            <param name="cmd"></param>
+            <param name="pageindex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.PgInfo(Infrastructure.Database.ctrl.HOYICMD,Infrastructure.Database.Pager.IPagingDataInfo)">
+            <summary>
+            传入 IPagingDataInfo 自动计算分页情况.
+            </summary>
+            <param name="cmd"></param>
+            <param name="pgd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.PgInfo(Infrastructure.Database.ctrl.HOYICMD,Infrastructure.Database.Pager.IPagingDataInfo,System.Int32)">
+            <summary>
+            传入 IPagingDataInfo 自动计算分页情况.
+            </summary>
+            <param name="cmd"></param>
+            <param name="pgd"></param>
+            <param name="DataCount">数据条数.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.PgInfo(Infrastructure.Database.ctrl.HOYICMD,Infrastructure.Database.Pager.IPagingDataInfo,System.String)">
+            <summary>
+            传入 IPagingDataInfo 自动计算分页情况.
+            </summary>
+            <param name="cmd"></param>
+            <param name="pgd"></param>
+            <param name="DataCount">数据条数.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Select_RC0(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            查询第一行第一列的内容.
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Select_CMD(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            根据条件，查询数据.
+            如果不输入参数，则是拿出所有的字段.
+            DT 返回表格
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Select(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            根据条件，查询数据.
+            如果不输入参数，则是拿出所有的字段.
+            DT 返回表格
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Select(Infrastructure.Database.ctrl.HOYICMD,System.Int32@,System.Object[])">
+            <summary>
+            根据条件，查询数据.
+            如果不输入参数，则是拿出所有的字段.
+            DT 返回表格
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Select(Infrastructure.Database.ctrl.HOYICMD,System.Int32@,System.Int32@,System.Object[])">
+            <summary>
+            根据条件，查询数据.
+            如果不输入参数，则是拿出所有的字段.
+            DT 返回表格
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Select``1(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            根据条件，查询数据.
+            如果不输入参数，则是拿出所有的字段.
+            DT 返回表格
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Select``1(Infrastructure.Database.ctrl.HOYICMD,System.Int32@,System.Object[])">
+            <summary>
+            根据条件，查询数据.
+            如果不输入参数，则是拿出所有的字段.
+            DT 返回表格
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Select``1(Infrastructure.Database.ctrl.HOYICMD,System.Int32@,System.Int32@,System.Object[])">
+            <summary>
+            根据条件，查询数据.
+            如果不输入参数，则是拿出所有的字段.
+            DT 返回表格
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.First``1(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            返回第一个
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Last``1(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            返回第一个
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Count(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            根据条件，查询数据.
+            如果不输入参数，则是拿出所有的字段.
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Distinct(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            select distinct(parameter) from table.
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.Distinct``1(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            select distinct(parameter) from table.
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.DistinctCount(Infrastructure.Database.ctrl.HOYICMD,System.Object[])">
+            <summary>
+            select count(distinct(parameter)) from table.
+            </summary>
+            <param name="cmd"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.ContractCMD(Infrastructure.Database.ctrl.HOYICMD)">
+            <summary>
+            组合命令.
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ctrl.HOYISQL.ToJson(System.Data.DataTable)">
+            <summary>
+            将 DataTable 转换为 Json.
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.DatabaseFactory">
+            <summary>
+            数据库工厂.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.DatabaseFactory.AllDatabaseType">
+            <summary>
+            提供程序与DatabaseType集合.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.DatabaseFactory.AllDatabaseFunction">
+            <summary>
+            DatabaseType与Type集合.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.DatabaseFactory.connectionStringName">
+            <summary>
+            连接字符串名称
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.DatabaseFactory.CurrentDataType">
+            <summary>
+            当前数据库类型.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.DatabaseFactory.getCurrentDataType">
+            <summary>
+            获取当前数据库类型.同一集群的数据库类型，最好弄成一样的。
+            这里就不考虑以前的做法，如果是单个服务器就根据单集群的方式来来做。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.DatabaseFactory.initDatabaseType">
+            <summary>
+            初始化数据库类型集合.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.DatabaseFactory.InitDatabase(System.Configuration.ConnectionStringSettings)">
+            <summary>
+            根据单个连接字符串,初始化数据库.
+            </summary>
+            <param name="conns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.DatabaseFactory.Create">
+            <summary>
+            创建/获取 数据库.
+            如果是集群，则默认获取读的服务器.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.DatabaseFactory.Create(System.Boolean)">
+            <summary>
+            创建/获取 数据库.
+            如果是集群，则默认获取读的服务器.
+            </summary>
+            <param name="_Are_READ_SERVER">是否是读的数据库，true 为 读数据库， false 为写数据库. </param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.dbTransfer.ITransfer">
+            <summary>
+             转换语句.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.dbTransfer.MySqlTransfer">
+            <summary>
+            Mysql 语法.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.dbTransfer.MySqlTransfer.InitCmd(System.String[],System.String[],System.Object[],System.String[],System.String[],Infrastructure.Database.ctrl.HOYICMD)">
+            <summary>
+            根据Filter获取Where的列表.
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Infrastructure.Database.dbTransfer.MySqlTransfer.ConAndOr(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Infrastructure.Database.dbTransfer.MySqlTransfer.InitParams(Infrastructure.Database.ents.Entity,System.String[],System.String[],System.Object[],Infrastructure.Database.ctrl.HOYICMD)">
+            <summary>
+            根据Filter和Values获取参数列表.
+            </summary>
+            <param name="entity"></param>
+            <param name="filter"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.dbTransfer.MySqlTransfer.UpdateCmd(Infrastructure.Database.ents.Entity,System.String[])">
+            <summary>
+            根据实体的条件来更新.即条件除外的不会更新.
+            如果当前条件跟其他条件冲突，则更新有问题，这种更新建议使用非实例化后的方法更新.
+            </summary>
+            <param name="entity"></param>
+            <param name="attfield"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.dbTransfer.MySqlTransfer.UpdateCmd(Infrastructure.Database.ents.Entity,Infrastructure.Database.Model.AttField[])">
+            <summary>
+            根据实体的条件来更新.即条件除外的不会更新.
+            如果当前条件跟其他条件冲突，则更新有问题，这种更新建议使用非实例化后的方法更新.
+            </summary>
+            <param name="entity"></param>
+            <param name="attfield"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.ents.Entity">
+            <summary>
+            实体的基类.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.getTableName">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.getEntityComment">
+            <summary>
+            实体名，一般为中文名.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.GetFieldByName(System.Type,System.String)">
+            
+            <summary>
+            该对象是否已持久化
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Clone">
+            <summary>
+            拷贝一个实体.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.GetEntityID">
+            <summary>
+            实体ID.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Insert(Infrastructure.Database.IDatabase)">
+            <summary>
+            插入对象
+            </summary>
+            <returns>成功返回受影响的条数，失败返回-1,报错信息，请查看Console</returns>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Insert_RETURN_OBJID(Infrastructure.Database.IDatabase)">
+            <summary>
+            插入对象并且返回自增的ID.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Insert_RETURN_ID(Infrastructure.Database.IDatabase)">
+            <summary>
+            插入对象并且返回自增的ID.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Insert_RETURN_64ID(Infrastructure.Database.IDatabase)">
+            <summary>
+            插入对象并且返回自增的ID.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Insert_RETURN_STRID(Infrastructure.Database.IDatabase)">
+            <summary>
+            插入对象并且返回自增的ID.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Exists">
+            <summary>
+            判断是否存在.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Update(Infrastructure.Database.IDatabase)">
+            <summary>
+             不建议使用.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.ents.Entity.Update(Infrastructure.Database.Model.AttField[],Infrastructure.Database.IDatabase)">
+            <summary>
+            不建议使用.
+            </summary>
+            <param name="fields"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Infrastructure.Database.ents.Entity.TransFromTable``1(System.Data.DataTable)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Infrastructure.Database.ents.Entity.TransFromTable(System.Type,System.Data.DataTable)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Infrastructure.Database.ents.Entity.EntityListToDataTable``1(System.Collections.Generic.List{``0})">
+            <summary>
+            将一个列表转换成DataTable,如果列表为空将返回空的DataTable结构
+            </summary>
+            <typeparam name="T">要转换的数据类型</typeparam>
+            <param name="entityList">实体对象列表</param> 
+        </member>
+        <member name="P:Infrastructure.Database.ents.Entity.attrs">
+            <summary>
+            DbAttr的属性.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.ents.Entity.pros">
+            <summary>
+            属性.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.ents.IEntityBase">
+            <summary>
+            实体对象基础类，用于实体与DataTable之间的转换.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.ents.IEntityBase.#ctor">
+            <summary>
+            构造.
+            </summary>
+        </member>
+        <!-- 对于成员“M:Infrastructure.Database.ents.IEntityBase.CanTrans(System.Data.DataTable)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Infrastructure.Database.ents.IEntityBase.TransDataTable(System.Data.DataTable)">
+            <summary>
+            将表内容转换成List集合.
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.IDatabase">
+            <summary>
+            Database 基类,描述数据库操作的最基本的方法.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.#ctor">
+            <summary>
+            数据库构造.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.#ctor(System.String)">
+            <summary>
+             数据库构造.
+            </summary>
+            <param name="connectName"></param>
+        </member>
+        <member name="F:Infrastructure.Database.IDatabase.connectionString">
+            <summary>
+            连接字符串.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.IDatabase.DBServerName">
+            <summary>
+            
+            数据库服务器的名称, 为ConnectionString 内的 Name的值.
+            如果是单个服务器，则直接取 Default
+            
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.IDatabase.dbType">
+            <summary>
+            数据库类型.sql or oracle, mysql.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.getConnection">
+            <summary>
+            获取连接字符串.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.initConnection">
+            <summary>
+            初始化连接字符串.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.initConnection(System.String)">
+            <summary>
+            初始化连接字符串.
+            </summary>
+            <param name="_DBServerName">连接字符串 NAME 的键值.</param>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.ExecuteTable(System.String)">
+            <summary>
+            执行命令,返回DataTable.
+            </summary>
+            <param name="comm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.ExecuteTable(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter},System.Boolean)">
+            <summary>
+            执行存储过程,返回DataTable
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.ExecuteTable(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行存储过程,返回DataTable
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.ExecuteDataSet(System.String)">
+            <summary>
+            执行命令,返回Dataset
+            </summary>
+            <param name="comm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.ExecuteDataReader(System.String)">
+            <summary>
+            执行命令,返回带连接的Reader.用完此方法后,请使用DataReader.Close(),Connection.Close();
+            </summary>
+            <param name="comm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.ExecuteNonQuery(System.String)">
+            <summary>
+            执行命令,返回受影响条数.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.ExecuteParamNonQuery(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行带参数命令，返回受影响行数.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.IDatabase.ExecuteParamExists(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行带参数命令，返回受影响行数.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Infrastructure.Database.IDatabase.autoCommit">
+            <summary>
+            是否自动提交，否则启动事务。
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.IDatabase.transaction">
+            <summary>
+            事务
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.IDatabase.connection">
+            <summary>
+            连接.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.IDatabase.command">
+            <summary>
+            命令.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.IDatabase.adapter">
+            <summary>
+            数据适配器.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.DatabaseType">
+            <summary>
+            当前系统所支持的数据库类型.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.ConnectType">
+            <summary>
+            当前连接类型.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.DatabaseConfig.DefaultConnectName">
+            <summary>
+            默认数据库连接名称.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.In(Infrastructure.Database.ctrl.HOYICMD)">
+            <summary>
+            In命令.
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.NotIn(Infrastructure.Database.ctrl.HOYICMD)">
+            <summary>
+            In命令.
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.op_Modulus(Infrastructure.Database.Model.AttField,System.Object)">
+            <summary>
+            Like
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.op_Division(Infrastructure.Database.Model.AttField,System.Object)">
+            <summary>
+            绝对Like, 为空则不判断.
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.op_Equality(Infrastructure.Database.Model.AttField,System.Object)">
+            <summary>
+            跟equals相同
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.op_Inequality(Infrastructure.Database.Model.AttField,System.Object)">
+            <summary>
+            跟except相同.
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.op_GreaterThan(Infrastructure.Database.Model.AttField,System.Object)">
+            <summary>
+            时间比对语法.
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.op_LessThan(Infrastructure.Database.Model.AttField,System.Object)">
+            <summary>
+            时间比对语法.
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.op_GreaterThanOrEqual(Infrastructure.Database.Model.AttField,System.Object)">
+            <summary>
+            赋值语法.
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Model.AttField.op_LessThanOrEqual(Infrastructure.Database.Model.AttField,System.Object)">
+            <summary>
+            赋值语法.
+            </summary>
+            <param name="str"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.MySqlDatabase">
+            <summary>
+            MYSQL数据库操作类.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.#ctor">
+            <summary>
+            生成MySqlDataBase实例.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.#ctor(System.String)">
+            <summary>
+            生成MySqlDataBase实例.
+            </summary>
+            <param name="connectionName"></param>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.ExecuteTable(System.String)">
+            <summary>
+            执行MySql语句,返回一张表.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.ExecuteTable(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter},System.Boolean)">
+            <summary>
+            执行存储过程,返回DataTable.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <param name="extendsionParamter">如果是TRUE表明是调用存储过程.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.ExecuteDataSet(System.String)">
+            <summary>
+            执行MySql语句,返回填充后的Dataset.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.ExecuteDataReader(System.String)">
+            <summary>
+            执行命令,返回带连接的Reader.用完此方法后,请使用DataReader.Close(),Connection.Close();
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.ExecuteParamExists(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行MySql语句，主要用于判断是否有符合条件的数据.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.ExecuteNonQuery(System.String)">
+            <summary>
+            执行MySql语句,返回受影响行数. 
+            </summary>
+            <param name="command"></param>
+            <returns>执行事务的时候返回值是无效的。</returns>
+        </member>
+        <member name="M:Infrastructure.Database.MySqlDatabase.ExecuteParamNonQuery(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            
+            执行Mysql语句，返回受影响的行数. 连续的增删改，才允许使用事务，其他情况不需要打开事务处理.
+            是否打开事务，由数据库创建时候决定,autoCommit = false就为启动事务。
+            
+            baseDatabase database = (baseDatabase)DatabaseFactory.Create(true);
+            IRole_userExpert _role_userExpert = (IRole_userExpert)ExpertFactory.New(typeof(Role_userExpert), database);
+            
+            使用事务的时候，
+            
+            database.OpenConnection();
+            _role_userExpert.Add(....);
+            database.CloseConnection();
+            
+            其他时候不需要创建database.
+            
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns>执行事务的时候返回值是无效的。</returns>
+        </member>
+        <member name="T:Infrastructure.Database.Operater.IInterfaceExpert">
+            <summary>
+            框架IExpert类.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.Operater.IOperateExpert">
+            <summary>
+            用户操作框架类.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.OracleDatabase">
+            <summary>
+            Oracle数据库方法,当前为空.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.Pager.IPagingDataInfo">
+            <summary>
+            获取分页信息参数模型,此模型用于模块内部填写,以便不暴露敏感信息,此处为敏感信息.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.IPagingDataInfo.SortedFields">
+            <summary>
+            排序字段.按此字段排序.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.IPagingDataInfo.PageSize">
+            <summary>
+            分页大小,一页条数.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.IPagingDataInfo.PageIndex">
+            <summary>
+            页码,当前第几页.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.Pager.pagectrlType">
+            <summary>
+            分页控件会用到的一些类型.
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.Pager.PagingController">
+            <summary>
+            分页控制类.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Pager.PagingController.GetRecordStoreName">
+            <summary>
+            获取分页总个数存储过程名称.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Pager.PagingController.GetDataStoreName">
+            <summary>
+            获取分页后数据存储过程名称.
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Database.Pager.PagingController.CustomPageSize">
+            <summary>
+            通用每页条数.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.Pager.PagingController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.Pager.PagingController.GetRecordCount(Infrastructure.Database.Pager.PagingCountInfo)">
+            <summary>
+            获取分页总个数.
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Pager.PagingController.GetPagingData(Infrastructure.Database.Pager.PagingDataInfo)">
+            <summary>
+            获取分页数据.
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Pager.PagingController.Execute(System.Type,System.String,Infrastructure.Database.Pager.IPagingDataInfo,System.Object)">
+            <summary>
+            执行相应读取分页数据方法.
+            </summary>
+            <param name="type">类.写法:typeof(namespace.Class);</param>
+            <param name="methodName">方法名.</param>
+            <param name="pDataInfo">分页参数.</param>
+            <param name="parameters">方法需要用到的参数.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.Pager.PagingController.CalcPageCount(System.Int32,System.Int32)">
+            <summary>
+            根据总条数,和页条数,计算共有多少页.
+            </summary>
+            <param name="recordCount">总条数.</param>
+            <param name="pageSize">一页多少条.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.Pager.PagingCountInfo">
+            <summary>
+            获取分页总个数参数模型.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.PagingCountInfo.TableName">
+            <summary>
+            表名.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.PagingCountInfo.CountFields">
+            <summary>
+            分页字段,按此字段进行分页.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.PagingCountInfo.Filter">
+            <summary>
+            筛选条件,例如: id like "aa%";
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Database.Pager.PagingDataInfo">
+            <summary>
+            获取分页数据参数模型.此模型用于模块内部填写,此处为不敏感信息.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.PagingDataInfo.TableName">
+            <summary>
+            表名.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.PagingDataInfo.Filter">
+            <summary>
+            筛选条件.
+            </summary>
+        </member>
+        <member name="P:Infrastructure.Database.Pager.PagingDataInfo.Fields">
+            <summary>
+            搜索出的字段,全部可用*表示.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.PublicService.LikeByFPY(System.String,System.String,System.String,System.String[])">
+            <summary>
+            根据表名,
+            </summary>
+            <param name="fpy_field">like中间的值，例如 like '%你好%'  则 fpy_field="你好"</param>
+            <param name="maintable">主表名，例如要查询 bas_menu 内的name为like '%fpy_field%'的值</param>
+            <param name="idname">id 的名字.</param>
+            <param name="filterfield">几个查询字段的名称.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Infrastructure.Database.SqlDatabase">
+            <summary>
+            SQL数据库操作类.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.#ctor">
+            <summary>
+            生成SqlDatabase实例.
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.#ctor(System.String)">
+            <summary>
+            生成SqlDatabase实例.
+            </summary>
+            <param name="connectionName"></param>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.ExecuteTable(System.String)">
+            <summary>
+            执行Sql语句,返回一张表.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.ExecuteTable(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter},System.Boolean)">
+            <summary>
+            执行存储过程,返回DataTable.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <param name="extendsionParamter">如果是TRUE表明是调用存储过程.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.ExecuteDataSet(System.String)">
+            <summary>
+            执行Sql语句,返回填充后的Dataset.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.ExecuteDataReader(System.String)">
+            <summary>
+            执行命令,返回带连接的Reader.用完此方法后,请使用DataReader.Close(),Connection.Close();
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.ExecuteNonQuery(System.String)">
+            <summary>
+            执行Sql语句,返回受影响行数.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.ExecuteParamNonQuery(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行sql语句，返回受影响的行数.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Database.SqlDatabase.ExecuteParamExists(System.String,System.Collections.Generic.List{System.Data.Common.DbParameter})">
+            <summary>
+            执行Sql语句，主要用于判断是否有符合条件的数据.
+            </summary>
+            <param name="command"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

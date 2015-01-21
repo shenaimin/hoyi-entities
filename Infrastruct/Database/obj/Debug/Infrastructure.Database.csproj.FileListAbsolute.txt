@@ -1,0 +1,53 @@
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Bin\Debug\Infrastructure.Database.dll
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Bin\Debug\Infrastructure.Database.pdb
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Database\obj\Debug\ResolveAssemblyReference.cache
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Database\obj\Debug\Infrastructure.Database.dll
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Database\obj\Debug\Infrastructure.Database.pdb
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Bin\Debug\Infrastructure.Database.dll
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Bin\Debug\Infrastructure.Database.pdb
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Database\obj\Debug\ResolveAssemblyReference.cache
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Database\obj\Debug\Infrastructure.Database.dll
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Database\obj\Debug\Infrastructure.Database.pdb
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Bin\Debug\Infrastructure.Database.xml
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Bin\Debug\Infrastructure.Database.dll
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Bin\Debug\Infrastructure.Database.pdb
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Database\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Database\obj\Debug\Infrastructure.Database.dll
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Database\obj\Debug\Infrastructure.Database.pdb
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Bin\Debug\Infrastructure.Database.xml
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Bin\Debug\Infrastructure.Database.xml
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Bin\Debug\Infrastructure.Database.dll
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Bin\Debug\Infrastructure.Database.pdb
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Database\obj\Debug\Infrastructure.Database.dll
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Database\obj\Debug\Infrastructure.Database.pdb
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Database\obj\Debug\Infrastructure.Database.csprojResolveAssemblyReference.cache
+F:\项目相关\DB_Cluster\Bin\Debug\Infrastructure.Database.xml
+F:\项目相关\DB_Cluster\Bin\Debug\Infrastructure.Database.dll
+F:\项目相关\DB_Cluster\Bin\Debug\Infrastructure.Database.pdb
+F:\项目相关\DB_Cluster\Infrastruct\Database\obj\Debug\Infrastructure.Database.csprojResolveAssemblyReference.cache
+F:\项目相关\DB_Cluster\Infrastruct\Database\obj\Debug\Infrastructure.Database.dll
+F:\项目相关\DB_Cluster\Infrastruct\Database\obj\Debug\Infrastructure.Database.pdb
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Bin\Debug\Infrastructure.Database.xml
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Bin\Debug\Infrastructure.Database.dll
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Bin\Debug\Infrastructure.Database.pdb
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Infrastruct\Database\obj\Debug\Infrastructure.Database.dll
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Infrastruct\Database\obj\Debug\Infrastructure.Database.pdb
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Infrastruct\Database\obj\Debug\Infrastructure.Database.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\CTERP\Bin\Debug\Infrastructure.Database.xml
+D:\WorkSpace_dNET\CTERP\Bin\Debug\Infrastructure.Database.dll
+D:\WorkSpace_dNET\CTERP\Bin\Debug\Infrastructure.Database.pdb
+D:\WorkSpace_dNET\CTERP\Infrastruct\Database\obj\Debug\Infrastructure.Database.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\CTERP\Infrastruct\Database\obj\Debug\Infrastructure.Database.dll
+D:\WorkSpace_dNET\CTERP\Infrastruct\Database\obj\Debug\Infrastructure.Database.pdb
+D:\WorkSpace_dNET\changtu\changtu\Bin\Debug\Infrastructure.Database.xml
+D:\WorkSpace_dNET\changtu\changtu\Bin\Debug\Infrastructure.Database.dll
+D:\WorkSpace_dNET\changtu\changtu\Bin\Debug\Infrastructure.Database.pdb
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Database\obj\Debug\Infrastructure.Database.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Database\obj\Debug\Infrastructure.Database.dll
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Database\obj\Debug\Infrastructure.Database.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Debug\Infrastructure.Database.xml
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Debug\Infrastructure.Database.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Debug\Infrastructure.Database.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Database\obj\Debug\Infrastructure.Database.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Database\obj\Debug\Infrastructure.Database.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Database\obj\Debug\Infrastructure.Database.csprojResolveAssemblyReference.cache

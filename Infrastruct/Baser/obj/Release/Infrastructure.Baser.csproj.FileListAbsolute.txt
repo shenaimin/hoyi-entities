@@ -1,0 +1,15 @@
+D:\WorkSpace_dNET\CTERP\Infrastruct\Baser\obj\Release\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\CTERP\Bin\Release\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\CTERP\Bin\Release\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\CTERP\Infrastruct\Baser\obj\Release\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\CTERP\Infrastruct\Baser\obj\Release\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Baser\obj\Release\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Baser\obj\Release\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Baser\obj\Release\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\changtu\changtu\Bin\Release\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\changtu\changtu\Bin\Release\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Release\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Release\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Baser\obj\Release\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Baser\obj\Release\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Baser\obj\Release\Infrastructure.Baser.pdb

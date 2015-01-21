@@ -1,0 +1,43 @@
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Bin\Debug\Infrastructure.Util.dll
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Bin\Debug\Infrastructure.Util.pdb
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Util\obj\Debug\ResolveAssemblyReference.cache
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Util\obj\Debug\Infrastructure.Util.dll
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Util\obj\Debug\Infrastructure.Util.pdb
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Bin\Debug\Infrastructure.Util.dll
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Bin\Debug\Infrastructure.Util.pdb
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Util\obj\Debug\ResolveAssemblyReference.cache
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Util\obj\Debug\Infrastructure.Util.dll
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Util\obj\Debug\Infrastructure.Util.pdb
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Bin\Debug\Infrastructure.Util.dll
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Bin\Debug\Infrastructure.Util.pdb
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Util\obj\Debug\Infrastructure.Util.dll
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Util\obj\Debug\Infrastructure.Util.pdb
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Bin\Debug\Infrastructure.Util.dll
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Bin\Debug\Infrastructure.Util.pdb
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Util\obj\Debug\Infrastructure.Util.dll
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Util\obj\Debug\Infrastructure.Util.pdb
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Util\obj\Debug\Infrastructure.Util.csprojResolveAssemblyReference.cache
+F:\项目相关\DB_Cluster\Bin\Debug\Infrastructure.Util.dll
+F:\项目相关\DB_Cluster\Bin\Debug\Infrastructure.Util.pdb
+F:\项目相关\DB_Cluster\Infrastruct\Util\obj\Debug\Infrastructure.Util.csprojResolveAssemblyReference.cache
+F:\项目相关\DB_Cluster\Infrastruct\Util\obj\Debug\Infrastructure.Util.dll
+F:\项目相关\DB_Cluster\Infrastruct\Util\obj\Debug\Infrastructure.Util.pdb
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Bin\Debug\Infrastructure.Util.dll
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Bin\Debug\Infrastructure.Util.pdb
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Infrastruct\Util\obj\Debug\Infrastructure.Util.dll
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Infrastruct\Util\obj\Debug\Infrastructure.Util.pdb
+d:\my documents\visual studio 2013\Projects\CTERP\Infrastruct\Util\obj\Debug\Infrastructure.Util.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\CTERP\Bin\Debug\Infrastructure.Util.dll
+D:\WorkSpace_dNET\CTERP\Bin\Debug\Infrastructure.Util.pdb
+D:\WorkSpace_dNET\CTERP\Infrastruct\Util\obj\Debug\Infrastructure.Util.dll
+D:\WorkSpace_dNET\CTERP\Infrastruct\Util\obj\Debug\Infrastructure.Util.pdb
+D:\WorkSpace_dNET\changtu\changtu\Bin\Debug\Infrastructure.Util.dll
+D:\WorkSpace_dNET\changtu\changtu\Bin\Debug\Infrastructure.Util.pdb
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Util\obj\Debug\Infrastructure.Util.dll
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Util\obj\Debug\Infrastructure.Util.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Debug\Infrastructure.Util.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Debug\Infrastructure.Util.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Util\obj\Debug\Infrastructure.Util.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Util\obj\Debug\Infrastructure.Util.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Util\obj\Debug\Infrastructure.Util.pdb

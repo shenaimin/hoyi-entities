@@ -1,0 +1,9 @@
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\bin\Debug\userMod.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\bin\Debug\userMod.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\bin\Debug\Infrastructure.Database.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\bin\Debug\MySql.Data.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\bin\Debug\Infrastructure.Database.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\bin\Debug\Infrastructure.Database.xml
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\obj\Debug\userMod.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\obj\Debug\userMod.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Module\userMod\obj\Debug\userMod.pdb

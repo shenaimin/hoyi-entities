@@ -1,0 +1,45 @@
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Baser\obj\Debug\ResolveAssemblyReference.cache
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Bin\Debug\Infrastructure.Baser.dll
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Bin\Debug\Infrastructure.Baser.pdb
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Baser\obj\Debug\Infrastructure.Baser.dll
+D:\Source_Cloud_Project\Fortune_SITE_SYSTEM\SYSTEM\PUBLIC\passport.fdboard.com\Infrastructure\Baser\obj\Debug\Infrastructure.Baser.pdb
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Bin\Debug\Infrastructure.Baser.dll
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Bin\Debug\Infrastructure.Baser.pdb
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Baser\obj\Debug\ResolveAssemblyReference.cache
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Baser\obj\Debug\Infrastructure.Baser.dll
+D:\Source-Library\CS_MYSQL_TR\MYSQLTR\Infrastructure\Baser\obj\Debug\Infrastructure.Baser.pdb
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Bin\Debug\Infrastructure.Baser.dll
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Bin\Debug\Infrastructure.Baser.pdb
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Baser\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Baser\obj\Debug\Infrastructure.Baser.dll
+C:\Documents and Settings\Administrator\桌面\mysql\MYSQLTR\Infrastructure\Baser\obj\Debug\Infrastructure.Baser.pdb
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Bin\Debug\Infrastructure.Baser.dll
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Bin\Debug\Infrastructure.Baser.pdb
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.dll
+D:\WorkSpace\Source_Cloud_Project\DB_Cluster_DEMO\DB_Cluster\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.pdb
+F:\项目相关\DB_Cluster\Bin\Debug\Infrastructure.Baser.dll
+F:\项目相关\DB_Cluster\Bin\Debug\Infrastructure.Baser.pdb
+F:\项目相关\DB_Cluster\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+F:\项目相关\DB_Cluster\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.dll
+F:\项目相关\DB_Cluster\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.pdb
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Bin\Debug\Infrastructure.Baser.dll
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Bin\Debug\Infrastructure.Baser.pdb
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.dll
+D:\My Documents\Visual Studio 2013\Projects\CTERP\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\CTERP\Bin\Debug\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\CTERP\Bin\Debug\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\CTERP\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\CTERP\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\CTERP\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\changtu\changtu\Bin\Debug\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\changtu\changtu\Bin\Debug\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\changtu\changtu\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Debug\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Bin\Debug\Infrastructure.Baser.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\Infrastruct\Baser\obj\Debug\Infrastructure.Baser.pdb

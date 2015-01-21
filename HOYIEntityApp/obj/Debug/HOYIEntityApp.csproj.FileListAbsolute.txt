@@ -1,0 +1,17 @@
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\HOYIEntityApp.exe.config
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\HOYIEntityApp.exe
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\HOYIEntityApp.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\Infrastructure.Database.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\userMod.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\MySql.Data.dll
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\Infrastructure.Database.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\Infrastructure.Database.xml
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\bin\Debug\userMod.pdb
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\obj\Debug\HOYIEntityApp.csprojResolveAssemblyReference.cache
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\obj\Debug\HOYIEntityApp.Form1.resources
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\obj\Debug\HOYIEntityApp.Form2.resources
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\obj\Debug\HOYIEntityApp.Properties.Resources.resources
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\obj\Debug\HOYIEntityApp.TRANS.resources
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\obj\Debug\HOYIEntityApp.csproj.GenerateResource.Cache
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\obj\Debug\HOYIEntityApp.exe
+D:\WorkSpace_dNET\HOYIEntity\HOYIEntityApp\HOYIEntityApp\obj\Debug\HOYIEntityApp.pdb
