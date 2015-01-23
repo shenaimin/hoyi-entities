@@ -77,7 +77,7 @@ namespace Infrastructure.Database
         public static IDatabase InitDatabase(ConnectionStringSettings conns)
         {
             DatabaseFactory.initDatabaseType();
-            if (conns.ProviderName != null && conns.ProviderName != "" && !AllDatabaseType.ContainsKey(conns.ProviderName))
+            if (conns.ProviderName != "" && AllDatabaseType.ContainsKey(conns.ProviderName))
             {
                 DatabaseType Dbtype = AllDatabaseType[conns.ProviderName];
                 Type type = AllDatabaseFunction[Dbtype];
