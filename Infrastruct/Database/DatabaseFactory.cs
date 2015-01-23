@@ -77,14 +77,18 @@ namespace Infrastructure.Database
         public static IDatabase InitDatabase(ConnectionStringSettings conns)
         {
             DatabaseFactory.initDatabaseType();
-            DatabaseType Dbtype = AllDatabaseType[conns.ProviderName];
-            Type type = AllDatabaseFunction[Dbtype];
-            IDatabase database = Activator.CreateInstance(type, new object[] { conns.Name }) as IDatabase;
-            database.dbType = Dbtype;
-            database.connectionString = conns.ConnectionString;
-            database.DBServerName = conns.Name;
+            if (conns.ProviderName != null && conns.ProviderName != "" && !AllDatabaseType.ContainsKey(conns.ProviderName))
+            {
+                DatabaseType Dbtype = AllDatabaseType[conns.ProviderName];
+                Type type = AllDatabaseFunction[Dbtype];
+                IDatabase database = Activator.CreateInstance(type, new object[] { conns.Name }) as IDatabase;
+                database.dbType = Dbtype;
+                database.connectionString = conns.ConnectionString;
+                database.DBServerName = conns.Name;
 
-            return database;
+                return database;
+            }
+            return null;
         }
         public static IDatabase CopyDatabase(IDatabase _database) 
         {
